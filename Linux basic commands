@@ -1,1 +1,69 @@
+cd path ---> it will change the directory.
+cd . ---> current directory.
+cd .. --> parent dir
+cd ~ --> home dir
+cd -  --> previous directory
+cd / --> root dir
+pwd --> present pwd
+touch file_name --> it will make the file
+mkdir --> it will make the dir(folder)
+rm -r dir_name or path of dir --> it will delete the dir which has content
+rm dir_name(empty) or file_name --> it will delete the file of empty dir
+ls --> list the content(files and folder names in the pwd)
+ls -a  --> it will return all files including hidden files
+cat file_name --> used to read the content of the file
+gedit file_name --> it will open the file in testeditor, we can do this using open cmd also.
+
+
+//Linux have three streams to transfer the data
+0. stdin --> standerd input.
+1. stdout --> standerd output.
+2. stderr --> standerd error.
+whenever we will enter command in terminal it will be standerd input
+the output from the terminal in stdout, and error is stderr
+
+for directing the output from terminal to anyfile we have to type
+command need to enter > filename to store the stdout
+      "     "        >>   "   "  // for storing the previous stdout along with new stdout content .
+      "      "       2>    "  " // for storing the stderr
+
+ls -la path // to list the long files.
+less file_path // to read the content of the big file in the form of scrolling page in cmd
+less ls -la file_name // this will give you error inorder to avoid this we will use pipelines.
+
+pipelines : denoted by " | " used to pass one command output from terminal as a input to the other command of the terminal
+
+ex: ls -la file_name | less : the output of ls -la file_name is the input to the less cms and the from cmd --> terminal.
+similarly we can join multiple cmds using the pipelines.
+
+echo is used to print the string entered in the terminal
+ex: echo "vg" stdout  = vg
+
+// environment varialbes 
+these variables are used to store the useful information of the system including the cmds, it is start with dollar sign
+ex: echo $PWD // return the present working directory.
+    echo $HOME //return the home directory path
+    echo $USER // return the system user name.
+* env  // return the all environment variables present in the system along with the outputs.
+echo $PATH // returns the all paths the system will search for the cmd entered in the terminal
+
+sort file_name // sort based on the alphabetical order.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
