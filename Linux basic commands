@@ -49,6 +49,27 @@ echo $PATH // returns the all paths the system will search for the cmd entered i
 
 sort file_name // sort based on the alphabetical order.
 
+///////////////USER PERMISSIONS AND SYSTEM PERMISSIONS///////////////////////
+as a user in the system we have certain limitation in order to access the files in the system, we can't have permission to access all the systems.
+we have to require ceratin previlages to acess the files in the system. their will be different users in the system handles diffent task.
+their will be diffent groups have their own specific previlages.
+--> in linux root(/) is the super user which can acess most of the files.
+---> ls -l : return the files names in dir includes file access permissions, file modification time. 
+d | rwx| rwx | r-x    ---> the return files information contain this in the begining.
+d----> directory ,if "-" is their inplace of "d" then it is file or "l" -->link.
+r--> read permission, w --> write permission, x ---> executable, "-" --> nothing we cant do r,w,x.
+first rwx for user, second for group, third for other user or thired party users.
+using chmod we can change the r,w,x of the file or folder
+ex: chmod u(user)org(group)o(others) +/- r,w,x file_name.
+      chmod u+w file.txt --> it will give the write permission in user section to the file.txt,
+      chmod g-w file.txt ---> it will remove the w permission in group section to the file.txt.
+            o --> other user.
+---> sudo : superdo command gives the root previlage to the user to acess some secure and important files
+ex: cat /etc/shadow : permission denined
+      sudo cat /etc/shadow : open the files
+
+
+
 
 
 
