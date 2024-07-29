@@ -68,7 +68,20 @@ ex: chmod u(user)org(group)o(others) +/- r,w,x file_name.
 ex: cat /etc/shadow : permission denined
       sudo cat /etc/shadow : open the files
 
+////////////////////////////////////PROCESSES////////////////////////////////////
 
+ps aux : will return the screen shot of the present running processes in the system.
+top : return the process running in the system along with dynamically changing values.
+
+demon processes : the process which are requried to run the os and terminates when os turns off.
+init process : it is mother process created when kernel bootup, all demon process are the clones of init process using fork() system call, 
+basically multiple processes are created by cloning from parent process but it is not compulsion.
+
+termination status : requried to the kernel to check the status of the process termination, process uses the "wait" system call to acknowledge the termination status.
+orphan process : whose parent process is dead, then init process will take care of orphan process.
+zombie process : whose termination status is not known to the kernel. init process will take care.
+
+SIGNALS : used to control the processes.
 
 
 
